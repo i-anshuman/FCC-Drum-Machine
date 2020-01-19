@@ -1,0 +1,31 @@
+.drum-pad {
+  width: 100px;
+  height: 80px;
+  cursor: pointer;
+  padding-top: 32px;
+  text-align: center;
+  border-top: 1px solid #64B5F6;
+  border-left: 1px solid #64B5F6;
+  border-radius: 5px;
+  box-shadow: 5px 5px 4px 2px #64B5F6;
+
+  &:nth-child(2),
+  &:nth-child(5),
+  &:nth-child(8) {
+    margin: 0 16px;
+  }
+  &:nth-child(4),
+  &:nth-child(5),
+  &:nth-child(6) {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+.active {
+  background-color: #64B5F6;
+  box-shadow: none;
+  border: none;
+  font-size: 25px;
+  padding-top: 25px;
+}
