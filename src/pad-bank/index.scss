@@ -1,0 +1,10 @@
+$pad-width: 100px;
+$pad-height: 80px;
+
+.pad-bank {
+  margin: 20px;
+  width: $pad-width * 3 + 32;
+  height: $pad-height * 3 + 32;
+  display: flex;
+  flex-wrap: wrap;
+}
