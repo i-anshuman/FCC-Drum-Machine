@@ -1,0 +1,37 @@
+.switch {
+  display: inline-block;
+  cursor: pointer;
+
+  & > label {
+    display: block;
+    text-align: center;
+  }
+
+  & > input[type='checkbox'] {
+    display: none;
+
+    &:checked + .switch__box {
+      .switch__slider {
+        background-color: #22b328;
+        margin-left: 21px;
+      }
+    }
+  }
+
+  &__box {
+    width: 54px;
+    height: 24px;
+    background-color: #000;
+    padding: 4px;
+    text-align: left !important;
+    cursor: pointer;
+  }
+
+  &__slider {
+    display: inline-block;
+    width: 25px;
+    height: 16px;
+    background-color: crimson;
+    transition: all 0.5s ease-in-out;
+  }
+}
