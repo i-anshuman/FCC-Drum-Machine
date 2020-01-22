@@ -22,12 +22,16 @@ const DrumPad = (props) => {
   }
 
   const playSound = (audio) => {
-    const sound = document.getElementById(audio);
-    if(sound) {
-      sound.currentTime = 0;
-      activate('active');
-      sound.play();
-      setTimeout(() => activate(''), 100);
+    if(props.power) {
+      const sound = document.getElementById(audio);
+      if(sound) {
+        sound.currentTime = 0;
+        activate('active');
+        sound.play();
+        sound.volume = props.volume;
+        setTimeout(() => activate(''), 100);
+        props.handleOnPlay(true);
+      }
     }
   }
 
