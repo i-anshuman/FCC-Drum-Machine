@@ -54,8 +54,8 @@ const ControlPanel = (props) => {
           default={true}
         />
       </div>
-      <div className="control-panel__banner">
-        <span>{banner}</span>
+      <div className="control-panel__banner" id="display">
+        {banner}
       </div>
       <div className="control-panel__volume">
         <input type="range"
